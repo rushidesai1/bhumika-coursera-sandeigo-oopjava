@@ -1,0 +1,14 @@
+// START SNIPPET configuration-injection
+subprojects {
+    apply plugin: 'java'
+    sourceCompatibility = 1.5
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        testCompile 'junit:junit:4.12'
+    }
+}
+// END SNIPPET configuration-injection
